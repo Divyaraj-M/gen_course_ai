@@ -1,14 +1,14 @@
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
-import React from 'react'
+import { Button } from '../../components/ui/button'; // Adjusted import path
+import Image from 'next/image';
+import React from 'react';
 
-function header() {
+function Header() {
   return (
     <div className='flex justify-between p-5 shadow-md'>
-       <img src="/globe.svg" width={100} height={100}/>
+      <Image src="/logo.png" width={130} height={130} alt="Logo" />
       <Button>Get Started</Button>
-        </div>
-  )
+    </div>
+  );
 }
 
-export default header
+export default Header;
